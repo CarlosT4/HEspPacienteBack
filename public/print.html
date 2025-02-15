@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carnet de Identificación</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="card" id="printCard">
+    <h2>MINISTERIO DE SALUD</h2>
+    <h3>U.E. 408 HOSPITAL DE ESPINAR</h3>
+    <h2>HOSPITAL DE ESPINAR</h2>
+    <p><strong>H.C.N°:</strong> <span id="hcn">123456</span></p>
+    <h3>CARNET DE IDENTIFICACIÓN</h3>
+    <div class="section">
+      <label>A. Paterno:</label>
+      <span id="paterno">Perez</span>
+      <label>A. Materno:</label>
+      <span id="materno">Gonzales</span>
+      <label>Nombre:</label>
+      <span id="nombre">Juan Carlos</span>
+    </div>
+    <button onclick="window.print()">Imprimir</button>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
