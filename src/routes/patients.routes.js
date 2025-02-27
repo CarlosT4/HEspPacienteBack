@@ -1,11 +1,14 @@
 import express from "express"
 import puppeteer from "puppeteer"
-import { getPatientByDNI } from "../controllers/patients.controller.js"
+import { getPatientByDNI,getVaccinationScheduleByDNI } from "../controllers/patients.controller.js"
 
 const router = express.Router()
 
 // Ruta para obtener datos del paciente por DNI
 router.get("/patients/:dni", getPatientByDNI)
+
+// Ruta para obtener esquema de vacunacion del paciente por DNI
+router.get("/vacunation/:dni",getVaccinationScheduleByDNI)
 
 // Ruta para generar PDF del carnet del paciente
 router.post("/patients/generate-pdf", async (req, res) => {
