@@ -1,5 +1,5 @@
 import { getConnection, sql } from "../database/connection.js";
-import { calcularEdad } from "../utils/ageUtils.js";
+import { calcularEdad, formatEdad } from "../utils/ageUtils.js";
 import { determinarVacunasYFechas } from "../utils/vaccineUtils.js";
 
 export const getPatientByDNI = async (req, res) => {
@@ -34,7 +34,7 @@ export const getPatientByDNI = async (req, res) => {
       ApellidoMaterno: paciente.ApellidoMaterno,
       PrimerNombre: paciente.PrimerNombre,
       SegundoNombre: paciente.SegundoNombre,
-      Edad: edad
+      Edad: formatEdad(edad)
     });
 
   } catch (error) {
@@ -74,16 +74,7 @@ export const getVaccinationScheduleByDNI = async (req, res) => {
     // Obtener vacunas recomendadas y rango de fechas
     let { vacunas, fechaInicio, fechaFin } = determinarVacunasYFechas(edad, FechaNacimiento);
     
-    let edadFormateada = "";
-    if (edad.anios >= 2) {
-      edadFormateada = `${edad.anios} años`;
-    } else if (edad.anios === 1) {
-      edadFormateada = `${edad.anios} año, ${edad.meses} meses`;
-    } else if (edad.meses > 0) {
-      edadFormateada = `${edad.meses} meses`;
-    } else {
-      edadFormateada = `${edad.dias} días`;
-    }
+    let edadFormateada = formatEdad(edad);
 
     res.json({
       Nombres: `${PrimerNombre} ${SegundoNombre? SegundoNombre:""}`.trim(),

@@ -36,3 +36,16 @@ export const calcularFecha = (fechaNacimiento, anios, meses) => {
 
     return `${dia}/${mes}/${anio}`;
 };
+
+//Formatear un objeto edad para mostar en anios meses y dias
+export const formatEdad = (edad) => {
+    if (edad.anios >= 2) {
+      return `${edad.anios} años`;
+    } else if (edad.anios === 1) {
+      return `${edad.anios} año, ${edad.meses} meses`;
+    } else if (edad.meses > 0) {
+      return `${edad.meses} meses`;
+    } else {
+      return `${edad.dias} días`;
+    }
+  }
