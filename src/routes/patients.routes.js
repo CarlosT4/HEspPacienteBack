@@ -8,7 +8,7 @@ const router = express.Router()
 router.get("/patients/:dni", getPatientByDNI)
 
 // Ruta para obtener esquema de vacunacion del paciente por DNI
-router.get("/vacunation/:dni",getVaccinationScheduleByDNI)
+router.get("/vaccination/:dni",getVaccinationScheduleByDNI)
 
 // Ruta para generar PDF del carnet del paciente
 router.post("/patients/generate-pdf", async (req, res) => {

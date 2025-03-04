@@ -52,6 +52,7 @@ export const getVaccinationScheduleByDNI = async (req, res) => {
       .input("dni", sql.VarChar, req.params.dni)
       .query(
         `SELECT 
+          NroHistoriaClinica, 
           ApellidoPaterno, 
           ApellidoMaterno, 
           PrimerNombre, 
@@ -62,23 +63,26 @@ export const getVaccinationScheduleByDNI = async (req, res) => {
       );
 
     if (result.recordset.length === 0) return res.sendStatus(404);
-
-    let { ApellidoPaterno, ApellidoMaterno, PrimerNombre, SegundoNombre, FechaNacimiento } = result.recordset[0];
+    
+    let paciente = result.recordset[0];
 
     //fecha
-    let fechaNacimiento = new Date(FechaNacimiento);
+    let fechaNacimiento = new Date(paciente.FechaNacimiento);
 
     // Calcular edad
-    let edad = calcularEdad(FechaNacimiento);
+    let edad = calcularEdad(paciente.FechaNacimiento);
 
     // Obtener vacunas recomendadas y rango de fechas
-    let { vacunas, fechaInicio, fechaFin } = determinarVacunasYFechas(edad, FechaNacimiento);
+    let { vacunas, fechaInicio, fechaFin } = determinarVacunasYFechas(edad, paciente.FechaNacimiento);
     
     let edadFormateada = formatEdad(edad);
 
     res.json({
-      Nombres: `${PrimerNombre} ${SegundoNombre? SegundoNombre:""}`.trim(),
-      Apellidos: `${ApellidoPaterno} ${ApellidoMaterno}`.trim(),
+      NroHistoriaClinica: paciente.NroHistoriaClinica,
+      ApellidoPaterno: paciente.ApellidoPaterno,
+      ApellidoMaterno: paciente.ApellidoMaterno,
+      PrimerNombre: paciente.PrimerNombre,
+      SegundoNombre: paciente.SegundoNombre,
       FechaNacimiento: `${fechaNacimiento.getUTCDate()}/${fechaNacimiento.getUTCMonth()+1}/${fechaNacimiento.getUTCFullYear()}`,
       Edad: edadFormateada,
       VacunasRecomendadas: vacunas,

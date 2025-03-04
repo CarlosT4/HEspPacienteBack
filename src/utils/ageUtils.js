@@ -24,10 +24,11 @@ export const calcularEdad = (fechaNacimiento) => {
 };
 
 // Función para calcular la fecha a partir de la edad mínima o máxima
-export const calcularFecha = (fechaNacimiento, anios, meses) => {
+export const calcularFecha = (fechaNacimiento, anios, meses, dias = 0) => {
     let fecha = new Date(fechaNacimiento);
     fecha.setUTCFullYear(fecha.getUTCFullYear() + anios);
     fecha.setUTCMonth(fecha.getUTCMonth() + meses);
+    fecha.setUTCDate(fecha.getUTCDate() + dias);
 
     // Formatear como DD-MM-YYYY
     let dia = fecha.getUTCDate().toString().padStart(2, "0");

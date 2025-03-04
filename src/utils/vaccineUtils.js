@@ -45,7 +45,7 @@ export const determinarVacunasYFechas = (edad, fechaNacimiento) => {
   if (!esquema) return { vacunas: [], fechaInicio: null, fechaFin: null };
 
   const fechaInicio = calcularFecha(fechaNacimiento, esquema.minAnios || 0, esquema.minMeses || 0);
-  const fechaFin = calcularFecha(fechaNacimiento, esquema.maxAnios || 0, esquema.maxMeses || 0);
+  let fechaFin = calcularFecha(fechaNacimiento, esquema.maxAnios || 0, (esquema.maxMeses || 0) + 1, -1);
 
   return { vacunas: esquema.vacunas, fechaInicio, fechaFin };
 };
