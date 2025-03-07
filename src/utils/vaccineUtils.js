@@ -33,69 +33,69 @@ HEPATITIS
 60 - mas anios -> DOSIS ANUAL Influenza, DOSIS UNICA Antineumococica
 
 - Recién nacidos (OK)
+[0 - 1] meses
 Dosis única de la vacuna contra el bacilo de Calmette-Guérin (BCG): contra las formas graves de tuberculosis (TB).
 Dosis única de la vacuna contra el virus de Hepatitis B (HVB): contra la hepatitis B.
 
-- A los 2 meses 
+[2 - 3] meses
 Primera dosis de la vacuna pentavalente (DPT - HvB - Hib): vacuna combinada de 5 componentes que previene la difteria, tétanos, tos ferina (DPT), neumonía, meningitis por haemophilus tipo b y hepatitis B.
 Primera dosis de la vacuna antipolio inactivada inyectable (IPV): vacuna contra la parálisis flácida aguda.
 Primera dosis de la vacuna contra el rotavirus: vacuna que previene las diarreas por rotavirus.
 Primera dosis de la vacuna antineumocócica: vacuna que protege contra la neumonía, meningitis y otitis media.
 
-- A los 4 meses
+[4 - 5] meses
 Segunda dosis de la vacuna pentavalente (DPT - HvB - Hib): vacuna combinada de 5 componentes que previene la difteria, tétanos, tos ferina (DPT), neumonía, meningitis por haemophilus tipo b y hepatitis B.
 Segunda dosis de la vacuna antipolio inactivada inyectable (IPV): vacuna contra la parálisis flácida aguda.
 Segunda dosis de la vacuna contra el rotavirus: vacuna que previene las diarreas por rotavirus.
 Segunda dosis de la vacuna antineumocócica: vacuna que protege contra la neumonía, meningitis y otitis media.
 
-- A los 6 meses 
+[6 - 6] meses
 Tercera dosis de la vacuna pentavalente (DPT - HvB - Hib): vacuna combinada de 5 componentes que previene la difteria, tétanos, tos ferina (DPT), neumonía, meningitis por haemophilus tipo b y hepatitis B.
 Tercera dosis de la vacuna antipolio oral (IPV): protección contra la parálisis flácida aguda.
 Primera dosis de la vacuna contra la influenza pediátrica: vacuna contra la gripe y bronquitis.
 
-- A los 7 meses
+[7 - 11] meses
 Segunda dosis de la vacuna contra la influenza pediátrica: vacuna contra la gripe y bronquitis.
 
-- A los 12 meses
+[12 - 14] meses 
 Primera dosis de la vacuna contra el sarampión, paperas y rubéola (SPR).
 Tercera dosis de la vacuna antineumocócica: protección contra la neumonía, meningitis y otitis media.
 Dosis única de la vacuna contra la varicela.
 Dosis anual de la vacuna contra la influenza pediátrica: vacuna contra la gripe y bronquitis.
 
-- A los 15 meses
+[15 - 17] meses
 Dosis única de la vacuna antiamarílica (AMA): contra la fiebre amarilla.
 Dosis única de la vacuna contra el virus de la hepatitis A.
 
-- A los 18 meses
+[18 - 23] meses
 Primera dosis de refuerzo de la vacuna de la difteria, pertussis y tétanos (DPT): vacuna que previene la difteria, tétanos y tos ferina.
 Primera dosis de refuerzo de la vacuna antipolio oral (IPV): protección contra la parálisis flácida aguda.
 Segunda dosis de la vacuna contra el sarampión, paperas y rubéola (SPR).
 
-- A los 2, 3 y 4 años
-2 años: Dosis anual de la vacuna contra la influenza pediátrica.
-3 años: Dosis anual de la vacuna contra la influenza pediátrica.
-4 años:
+[2 - 3] anios
+Dosis anual de la vacuna contra la influenza pediátrica.
+
+[4 - 8] anios
 Dosis anual de la vacuna contra la influenza pediátrica.
 Segunda dosis de refuerzo de la vacuna de la difteria, pertussis y tétanos (DPT): vacuna que previene la difteria, tétanos y tos ferina.
 Segunda dosis de refuerzo de la vacuna antipolio oral (APO): vacuna contra la parálisis flácida aguda.
 
-- De 9 a 13 años
+[9 - 13] anios 
 Vacuna contra el virus del papiloma humano (VPH): Prevención del cáncer de cuello uterino y verrugas genitales.
 Niñas: una dosis.
 Niños: una dosis.
 
-- De 14 a 18 años
+[14 - 18] anios
 Vacuna contra el virus del papiloma humano (VPH): Prevención del cáncer de cuello uterino y verrugas genitales.
 Mujeres: una dosis, siempre y cuando no se haya aplicado antes.
 Hombres: una dosis, siempre y cuando no se haya aplicado antes.
 
-- De 19 a 59 anios
+[19 - 59] anios
 Vacuna antiamarílica: Contra la fiebre amarilla (para personas de 15 meses a 59 años que viajen a áreas de riesgo por turismo o trabajo, con un mínimo de 10 días previos al viaje, como para residentes en zonas endémicas).
 Vacuna contra la hepatitis B: Para personas con condiciones de comorbilidad.
 Vacuna contra la influenza: Para personas con condiciones de comorbilidad.
 
-
-- De 60 anios a mas
+60 - mas anios
 Dosis anual de la vacuna contra la influenza.
 Dosis única de la vacuna antineumocócica: protección contra la neumonía, meningitis y otitis media.
 
