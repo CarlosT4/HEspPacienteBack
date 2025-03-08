@@ -101,21 +101,83 @@ Dosis única de la vacuna antineumocócica: protección contra la neumonía, men
 
 */
 export const esquemaVacunacion = [
-  { maxAnios: 0, minMeses: 0, maxMeses: 1, vacunas: ["BCG (Tuberculosis)", "HvB (Hepatitis b)"] },
-  { maxAnios: 0, minMeses: 2, maxMeses: 3, vacunas: ["Rotavirus", "Antineumocócica", "Pentavalente", "IPV (Poliomielitis)"] },
-  { maxAnios: 0, minMeses: 4, maxMeses: 5, vacunas: ["Rotavirus", "Antineumococica", "Pentavalente 2º", "IPV (Poliomielitis)"] },
-  { maxAnios: 0, minMeses: 6, maxMeses: 6, vacunas: ["Pentavalente 3º", "IPV (Poliomielitis)", "Influenza Ped."] },
-  { maxAnios: 0, minMeses: 7, maxMeses: 11, vacunas: ["Influenza Ped."] },
-  { maxAnios: 1, minMeses: 0, maxMeses: 2, vacunas: ["Neumococo", "Influenza Ped.", "SPR (sarampion) 1º dosis", "Varicela"] },
-  { maxAnios: 1, minMeses: 3, maxMeses: 5, vacunas: ["AMA (fiebre amarilla)", "Hepatitis A"] },
-  { maxAnios: 1, minMeses: 6, maxMeses: 11, vacunas: ["IPV (Poliomielitis)", "SPR (sarampion) 2º dosis", "DPT (difteria, tétanos y tos ferina) 1º ref."] },
-  { minAnios: 2, maxAnios: 3, minMeses: 0, maxMeses: 11, vacunas: ["IPV (Poliomielitis)", "SPR (sarampion) 2º dosis", "DPT (difteria, tétanos y tos ferina) 1º ref."] },
-  { minAnios: 4, maxAnios: 8, minMeses: 0, maxMeses: 11, vacunas: ["Influenza Adul.", "APO (Poliomielitits) 2º ref. (2023)", "DPT (difteria, tétanos y tos ferina) 2° ref."] },
-  { minAnios: 9, maxAnios: 13, minMeses: 0, maxMeses: 11, vacunas: ["VPH"] },
-  { minAnios: 14, maxAnios: 18, minMeses: 0, maxMeses: 11, vacunas: ["VPH"] },
-  { minAnios: 60, maxAnios: Infinity, minMeses: 0, maxMeses: 11, vacunas: ["Influenza", "Neumococo"] }
+  { maxAnios: 0, minMeses: 0, maxMeses: 1, vacunas: [
+      { nombre: "BCG (Tuberculosis)", descripcion: "Dosis única contra las formas graves de tuberculosis (TB)." },
+      { nombre: "HvB (Hepatitis B)", descripcion: "Dosis única contra la hepatitis B." }
+    ]
+  },
+  { maxAnios: 0, minMeses: 2, maxMeses: 3, vacunas: [
+      { nombre: "Pentavalente", descripcion: "Primera dosis, previene difteria, tétanos, tos ferina (DPT), neumonía, meningitis por haemophilus tipo b y hepatitis B." },
+      { nombre: "IPV (Poliomielitis)", descripcion: "Primera dosis contra la parálisis flácida aguda." },
+      { nombre: "Rotavirus", descripcion: "Primera dosis contra las diarreas por rotavirus." },
+      { nombre: "Antineumocócica", descripcion: "Primera dosis contra neumonía, meningitis y otitis media." }
+    ]
+  },
+  { maxAnios: 0, minMeses: 4, maxMeses: 5, vacunas: [
+      { nombre: "Pentavalente", descripcion: "Segunda dosis, previene difteria, tétanos, tos ferina (DPT), neumonía, meningitis por haemophilus tipo b y hepatitis B." },
+      { nombre: "IPV (Poliomielitis)", descripcion: "Segunda dosis contra la parálisis flácida aguda." },
+      { nombre: "Rotavirus", descripcion: "Segunda dosis contra las diarreas por rotavirus." },
+      { nombre: "Antineumocócica", descripcion: "Segunda dosis contra neumonía, meningitis y otitis media." }
+    ]
+  },
+  { maxAnios: 0, minMeses: 6, maxMeses: 6, vacunas: [
+      { nombre: "Pentavalente", descripcion: "Tercera dosis, previene difteria, tétanos, tos ferina (DPT), neumonía, meningitis por haemophilus tipo b y hepatitis B." },
+      { nombre: "IPV (Poliomielitis)", descripcion: "Tercera dosis contra la parálisis flácida aguda." },
+      { nombre: "Influenza Ped.", descripcion: "Primera dosis contra la gripe y bronquitis." }
+    ]
+  },
+  { maxAnios: 0, minMeses: 7, maxMeses: 11, vacunas: [
+      { nombre: "Influenza Ped.", descripcion: "Segunda dosis contra la gripe y bronquitis." }
+    ]
+  },
+  { maxAnios: 1, minMeses: 12, maxMeses: 14, vacunas: [
+      { nombre: "SPR (Sarampión, Paperas, Rubéola)", descripcion: "Primera dosis contra estas enfermedades." },
+      { nombre: "Antineumocócica", descripcion: "Tercera dosis contra neumonía, meningitis y otitis media." },
+      { nombre: "Varicela", descripcion: "Dosis única contra la varicela." },
+      { nombre: "Influenza Ped.", descripcion: "Dosis anual contra la gripe y bronquitis." }
+    ]
+  },
+  { maxAnios: 1, minMeses: 15, maxMeses: 17, vacunas: [
+      { nombre: "AMA (Antiamarílica)", descripcion: "Dosis única contra la fiebre amarilla." },
+      { nombre: "Hepatitis A", descripcion: "Dosis única contra la hepatitis A." }
+    ]
+  },
+  { maxAnios: 1, minMeses: 18, maxMeses: 23, vacunas: [
+      { nombre: "DPT (Difteria, Tétanos, Tos Ferina)", descripcion: "Primer refuerzo." },
+      { nombre: "IPV (Poliomielitis)", descripcion: "Primer refuerzo." },
+      { nombre: "SPR (Sarampión, Paperas, Rubéola)", descripcion: "Segunda dosis." }
+    ]
+  },
+  { maxAnios: 3, minAnios: 2, vacunas: [
+      { nombre: "Influenza Ped.", descripcion: "Dosis anual contra la gripe y bronquitis." }
+    ]
+  },
+  { maxAnios: 8, minAnios: 4, vacunas: [
+      { nombre: "Influenza Ped.", descripcion: "Dosis anual contra la gripe y bronquitis." },
+      { nombre: "DPT", descripcion: "Segundo refuerzo contra la difteria, tétanos y tos ferina." },
+      { nombre: "APO (Poliomielitis Oral)", descripcion: "Segundo refuerzo." }
+    ]
+  },
+  { maxAnios: 13, minAnios: 9, vacunas: [
+      { nombre: "VPH (Virus del Papiloma Humano)", descripcion: "Una dosis para niñas y niños." }
+    ]
+  },
+  { maxAnios: 18, minAnios: 14, vacunas: [
+      { nombre: "VPH", descripcion: "Una dosis para hombres y mujeres que no la hayan recibido antes." }
+    ]
+  },
+  { maxAnios: 59, minAnios: 19, vacunas: [
+      { nombre: "Antiamarílica", descripcion: "Para quienes viajan a áreas de riesgo o residentes en zonas endémicas." },
+      { nombre: "Hepatitis B", descripcion: "Para personas con comorbilidades." },
+      { nombre: "Influenza", descripcion: "Para personas con comorbilidades." }
+    ]
+  },
+  { minAnios: 60, maxAnios: Infinity, vacunas: [
+      { nombre: "Influenza", descripcion: "Dosis anual contra la gripe." },
+      { nombre: "Neumococo", descripcion: "Dosis única contra neumonía, meningitis y otitis media." }
+    ]
+  }
 ];
-
 // Función para determinar vacunas y fechas
 export const determinarVacunasYFechas = (edad, fechaNacimiento) => {
   const esquema = esquemaVacunacion.find(({ minAnios = 0, maxAnios = Infinity, minMeses = 0, maxMeses = 11 }) =>
