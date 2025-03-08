@@ -130,49 +130,49 @@ export const esquemaVacunacion = [
       { nombre: "Influenza Ped.", descripcion: "Segunda dosis contra la gripe y bronquitis." }
     ]
   },
-  { maxAnios: 1, minMeses: 12, maxMeses: 14, vacunas: [
+  { maxAnios: 1, minMeses: 0, maxMeses: 2, vacunas: [
       { nombre: "SPR (Sarampión, Paperas, Rubéola)", descripcion: "Primera dosis contra estas enfermedades." },
       { nombre: "Antineumocócica", descripcion: "Tercera dosis contra neumonía, meningitis y otitis media." },
       { nombre: "Varicela", descripcion: "Dosis única contra la varicela." },
       { nombre: "Influenza Ped.", descripcion: "Dosis anual contra la gripe y bronquitis." }
     ]
   },
-  { maxAnios: 1, minMeses: 15, maxMeses: 17, vacunas: [
+  { maxAnios: 1, minMeses: 3, maxMeses: 5, vacunas: [
       { nombre: "AMA (Antiamarílica)", descripcion: "Dosis única contra la fiebre amarilla." },
       { nombre: "Hepatitis A", descripcion: "Dosis única contra la hepatitis A." }
     ]
   },
-  { maxAnios: 1, minMeses: 18, maxMeses: 23, vacunas: [
+  { maxAnios: 1, minMeses: 6, maxMeses: 11, vacunas: [
       { nombre: "DPT (Difteria, Tétanos, Tos Ferina)", descripcion: "Primer refuerzo." },
       { nombre: "IPV (Poliomielitis)", descripcion: "Primer refuerzo." },
       { nombre: "SPR (Sarampión, Paperas, Rubéola)", descripcion: "Segunda dosis." }
     ]
   },
-  { maxAnios: 3, minAnios: 2, vacunas: [
+  { minAnios: 2, maxAnios: 3, minMeses: 0, maxMeses: 11, vacunas: [
       { nombre: "Influenza Ped.", descripcion: "Dosis anual contra la gripe y bronquitis." }
     ]
   },
-  { maxAnios: 8, minAnios: 4, vacunas: [
+  { minAnios: 4, maxAnios: 8, minMeses: 0, maxMeses: 11, vacunas: [
       { nombre: "Influenza Ped.", descripcion: "Dosis anual contra la gripe y bronquitis." },
       { nombre: "DPT", descripcion: "Segundo refuerzo contra la difteria, tétanos y tos ferina." },
       { nombre: "APO (Poliomielitis Oral)", descripcion: "Segundo refuerzo." }
     ]
   },
-  { maxAnios: 13, minAnios: 9, vacunas: [
+  { minAnios: 9, maxAnios: 13, minMeses: 0, maxMeses: 11, vacunas: [
       { nombre: "VPH (Virus del Papiloma Humano)", descripcion: "Una dosis para niñas y niños." }
     ]
   },
-  { maxAnios: 18, minAnios: 14, vacunas: [
+  { minAnios: 14, maxAnios: 18, minMeses: 0, maxMeses: 11, vacunas: [
       { nombre: "VPH", descripcion: "Una dosis para hombres y mujeres que no la hayan recibido antes." }
     ]
   },
-  { maxAnios: 59, minAnios: 19, vacunas: [
+  { minAnios: 19, maxAnios: 59, minMeses: 0, maxMeses: 11, vacunas: [
       { nombre: "Antiamarílica", descripcion: "Para quienes viajan a áreas de riesgo o residentes en zonas endémicas." },
       { nombre: "Hepatitis B", descripcion: "Para personas con comorbilidades." },
       { nombre: "Influenza", descripcion: "Para personas con comorbilidades." }
     ]
   },
-  { minAnios: 60, maxAnios: Infinity, vacunas: [
+  { minAnios: 60, maxAnios: Infinity, minMeses: 0, maxMeses: 11, vacunas: [
       { nombre: "Influenza", descripcion: "Dosis anual contra la gripe." },
       { nombre: "Neumococo", descripcion: "Dosis única contra neumonía, meningitis y otitis media." }
     ]
