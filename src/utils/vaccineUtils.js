@@ -172,7 +172,7 @@ export const esquemaVacunacion = [
       { nombre: "Influenza", descripcion: "Para personas con comorbilidades." }
     ]
   },
-  { minAnios: 60, maxAnios: Infinity, minMeses: 0, maxMeses: 11, vacunas: [
+  { minAnios: 60, maxAnios: 120, minMeses: 0, maxMeses: 11, vacunas: [
       { nombre: "Influenza", descripcion: "Dosis anual contra la gripe." },
       { nombre: "Neumococo", descripcion: "Dosis única contra neumonía, meningitis y otitis media." }
     ]
