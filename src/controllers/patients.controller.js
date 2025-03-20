@@ -66,9 +66,6 @@ export const getVaccinationScheduleByDNI = async (req, res) => {
     
     let paciente = result.recordset[0];
 
-    //fecha
-    let fechaNacimiento = new Date(paciente.FechaNacimiento);
-
     // Calcular edad
     let edad = calcularEdad(paciente.FechaNacimiento);
 
@@ -83,7 +80,6 @@ export const getVaccinationScheduleByDNI = async (req, res) => {
       ApellidoMaterno: paciente.ApellidoMaterno,
       PrimerNombre: paciente.PrimerNombre,
       SegundoNombre: paciente.SegundoNombre,
-      FechaNacimiento: `${fechaNacimiento.getUTCDate()}/${fechaNacimiento.getUTCMonth()+1}/${fechaNacimiento.getUTCFullYear()}`,
       Edad: edadFormateada,
       VacunasRecomendadas: vacunas,
       FechaInicio: fechaInicio ? fechaInicio : "No disponible",
